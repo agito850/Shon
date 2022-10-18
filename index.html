@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+        /*-----------------*/
+        body{
+            background-color: #000021;
+        }
+        .menu{
+            display: block;
+            background-color: #fedd03;
+            margin: auto;
+            width: 776px;
+            height: 1433px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 30px 30px 0 30px;
+            letter-spacing: -0.5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            color: #e92769;
+            margin-bottom: 80px;
+        }
+        .en{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+        }
+        .title{
+            font-size: 26pt;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items:flex-end;
+            justify-content: space-between;
+
+        }
+        .titleName{
+            display: inline-block;
+            width: 60%;
+            margin: 0;
+            
+        }
+        .regularCup{
+            font-size: 22pt;
+            text-align: center;
+            display: inline-block;
+        }
+        .upsizeCup{
+            font-size: 22pt;
+            text-align: center;
+            display: inline-block;
+        }
+        hr{
+            border-width: 0px;
+            border-bottom: none;
+            color: #6de8da;
+            border-style: solid;
+            margin-bottom: 30px; 
+        }
+        .drinks{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 776px;
+            margin: 12px 0; 
+        }
+        .name{
+            display: inline-block;
+            font-size: 27pt;
+            margin-bottom: 15px; 
+            width: 320px;
+            line-height: 1em;
+        }
+        .enName{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+            font-size: 22pt;
+        }
+        .HorI{
+            display: block;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 500;
+            font-size: 20pt;
+            width: 120px;
+        }
+        .price-R{
+            display: block;
+            font-weight: 900;
+            font-size: 27pt;
+            width: 80px;
+            margin-left: 32px;
+        }
+        .price-UP{
+            display: block;
+            font-weight: 900;
+            font-size: 27pt;
+            width: 80px;
+            text-align: right;
+            margin-right: 30px;
+        }
+        footer{
+            background-color: #e92769;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            /*margin-top: 83px;*/
+            height: 200px;
+            width: 706px;
+            padding: 50px 35px;
+            line-height: 2em;
+        }
+        .only-pc{
+            display: flex;
+        }
+        .only-sp{
+            display: none;
+        }
+        @media only screen and (max-width: 768px) {
+            .menu{
+            width: 86%;
+            height: 1000px;
+            padding: 7%;
+            margin: 0;
+            }
+            .title {
+            font-size: 13pt;
+            }
+            .titleName{
+            width: 30%;
+            }
+            .regularCup {
+            font-size: 10pt;
+            margin-left: 30%;
+            }
+            .upsizeCup {
+            font-size: 10pt;
+            }
+            .drinks {
+            width: 100%;
+            margin: 12px 0;
+            }
+            .name {
+            font-size: 12pt;
+            width: 40%;
+            }
+            .enName {
+            font-size: 12pt;
+            }
+            .HorI {
+            font-size: 10pt;
+            width: 10%;
+            }
+            .price-R {
+            font-size: 12pt;
+            width: 10%;
+            }
+            .price-UP {
+            font-size: 12pt;
+            width: 10%;
+            margin-right: 5%;
+            }
+            footer{
+            height: 200px;
+            width: 90%;
+            padding: 0;
+            line-height: 2em;
+            }
+            .only-sp{
+            display: flex;
+            }
+            .only-pc{
+            display: none;
+            }
+            footer{
+                display: flex;
+                flex-direction: column;
+            align-items: center;
+            height: 18%;
+            width: 80%;
+            padding: 10%;
+            line-height: 2em;
+            }
+            .plus{
+            display: flex;
+            flex-direction: row;
+            }
+            .container {
+            margin-bottom: 5%;
+            }
+    </style>
+
+</head>
+<body>
+    <div class="menu">
+        <div class="container">
+            <div class="signatureLattes">
+                <div class="title">
+                    <p class="titleName">閃電特調<br>
+                    <span class="en">SIGNATURE LATTES</span></p>
+                    <p class="regularCup">中杯<br><span class="en">REGULAR</span></p>
+                    <p class="upsizeCup">大杯<br><span class="en">UPSIZE</span></p>
+                </div>
+                <hr>
+                <div class="content">
+                    <ul class="drinks">
+                        <li class="name"><span class="en">OATLY </span>燕麥拿鐵<br>
+                            <span class="enName">OATLY LATTE</span></li>
+                        <li class="HorI">HOT/ICED</li>
+                        <li class="price-R en">80</li>
+                        <li class="price-UP en">105</li>
+                    </ul>
+                    <ul class="drinks">
+                        <li class="name">夏威夷果拿鐵<br>
+                            <span class="enName">MACADAMIA LATTE</span></li>
+                        <li class="HorI">HOT/ICED</li>
+                        <li class="price-R en">80</li>
+                        <li class="price-UP en">105</li>
+                    </ul>
+                    <ul class="drinks">
+                        <li class="name">榛心可可拿鐵<br>
+                            <span class="enName">NUTELLA LATTE</span></li>
+                        <li class="HorI">HOT/ICED</li>
+                        <li class="price-R en">80</li>
+                        <li class="price-UP en">105</li>
+                    </ul>
+                    <ul class="drinks">
+                        <li class="name">桂花拿鐵<br>
+                            <span class="enName">OSMANTHUS LATTE</span></li>
+                        <li class="HorI">HOT/ICED</li>
+                        <li class="price-R en">80</li>
+                        <li class="price-UP en">105</li>
+                    </ul>
+                    <ul class="drinks">
+                        <li class="name">沙灘拿鐵<br>
+                            <span class="enName">BEACH LATTE</span></li>
+                        <li class="HorI">HOT/ICED</li>
+                        <li class="price-R en">80</li>
+                        <li class="price-UP en">105</li>
+                    </ul>
+                    <ul class="drinks">
+                        <li class="name">冰煉乳拿鐵<br>
+                            <span class="enName">ICEPRESSO</span></li>
+                        <li class="HorI">ICED</li>
+                        <li class="price-R en">80</li>
+                        <li class="price-UP en">105</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="milks">
+                <div class="title">
+                    <p class="titleName">歐蕾系列<br>
+                    <span class="en">MILKS</span></p>
+                    <p class="regularCup">中杯<br><span class="en">REGULAR</span></p>
+                    <p class="upsizeCup">大杯<br><span class="en">UPSIZE</span></p>
+                </div>
+                <hr>
+                <div class="content">
+                    <ul class="drinks">
+                        <li class="name">濃郁義式可可<br>
+                            <span class="enName">CHOCOLATE</span></li>
+                        <li class="HorI">HOT/ICED</li>
+                        <li class="price-R en">80</li>
+                        <li class="price-UP en">105</li>
+                    </ul>
+                    <ul class="drinks">
+                        <li class="name">抹茶歐蕾<br>
+                            <span class="enName">MATCHA LATTE</span></li>
+                        <li class="HorI">HOT/ICED</li>
+                        <li class="price-R en">70</li>
+                        <li class="price-UP en">90</li>
+                    </ul>
+                    <ul class="drinks">
+                        <li class="name">抹茶夏威夷果歐蕾<br>
+                            <span class="enName">NUTELLA LATTE</span></li>
+                        <li class="HorI">HOT/ICED</li>
+                        <li class="price-R en">90</li>
+                        <li class="price-UP en">110</li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <footer class="only-pc">
+            <div style="color: #fedd03;font-size: 18pt;font-weight:300;width: 250px;">
+                升級<br>
+                <span class="enName"style="font-weight:300;">UPGRADES</span>
+            </div>
+            <div style="color: #ffffff;font-size: 18pt;font-weight:300;width: 450px;">
+                +閃電濃縮 <span class="en"style="font-weight:100;">EXTRA EXPRESSO SHOT</span><br>
+                <span class="en"style="font-weight:100;">OATLY</span> 燕麥奶 <span class="en"style="font-weight:100;">OATLY MILKS</span><br>
+                榛果可可醬 <span class="en"style="font-weight:100;">NUTTELLA(10g)</span><br>
+            </div>
+            <div style="color: #ffffff;font-size: 20pt;width: 60px;font-weight:100 !important;text-align: right;">
+                <span class="en"style="font-weight:100;">10</span><br>
+                <span class="en"style="font-weight:100;">20</span><br>
+                <span class="en"style="font-weight:100;">5</span>
+            </div>
+        </footer>
+
+        <footer class="only-sp">
+            <div style="color: #fedd03;font-size: 22pt;font-weight:300;width: 250px;">
+                升級<br>
+                <span class="enName"style="font-weight:300;">UPGRADES</span>
+            </div>
+            <div class="plus">
+                <div style="color: #ffffff;font-size: 12pt;font-weight:300;width: 80%;">
+                    +閃電濃縮 <span class="en"style="font-weight:100;">EXTRA EXPRESSO SHOT</span><br>
+                    <span class="en"style="font-weight:100;">OATLY</span> 燕麥奶 <span class="en"style="font-weight:100;">OATLY MILKS</span><br>
+                    榛果可可醬 <span class="en"style="font-weight:100;">NUTTELLA(10g)</span><br>
+                </div>
+                <div style="color: #ffffff;font-size: 15pt;width: 60px;font-weight:100 !important;text-align: right;">
+                    <span class="en"style="font-weight:100;">10</span><br><br>
+                    <span class="en"style="font-weight:100;">20</span><br>
+                    <span class="en"style="font-weight:100;">5</span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
